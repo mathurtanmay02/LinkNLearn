@@ -30,10 +30,10 @@
       
       Ayush Singh(Frontend Developer)
       
-      Screenshots:
-      ![image](https://user-images.githubusercontent.com/75316656/200157894-f1703871-632c-483e-bbff-32b6ff620d59.png)
-      ![image](https://user-images.githubusercontent.com/75316656/200157915-d6dc56c1-a8c7-484e-bcae-143a1ccec472.png)
-      ![image](https://user-images.githubusercontent.com/75316656/200157921-89811493-d8ed-4294-94b8-96af28f15a35.png)
-      ![image](https://user-images.githubusercontent.com/75316656/200157936-532ece83-150e-4af1-8c03-2fad06d8bc52.png)
-      ![image](https://user-images.githubusercontent.com/75316656/200157945-4931a3c3-15a5-4a86-a58e-0b63546adec8.png)
-      ![image](https://user-images.githubusercontent.com/75316656/200157958-8e8211da-fb84-4da5-9347-b50489adab57.png)
+Screenshots:
+![image](https://user-images.githubusercontent.com/75316656/200157894-f1703871-632c-483e-bbff-32b6ff620d59.png)
+![image](https://user-images.githubusercontent.com/75316656/200157915-d6dc56c1-a8c7-484e-bcae-143a1ccec472.png)
+![image](https://user-images.githubusercontent.com/75316656/200157921-89811493-d8ed-4294-94b8-96af28f15a35.png)
+![image](https://user-images.githubusercontent.com/75316656/200157936-532ece83-150e-4af1-8c03-2fad06d8bc52.png)
+![image](https://user-images.githubusercontent.com/75316656/200157945-4931a3c3-15a5-4a86-a58e-0b63546adec8.png)
+![image](https://user-images.githubusercontent.com/75316656/200157958-8e8211da-fb84-4da5-9347-b50489adab57.png)
