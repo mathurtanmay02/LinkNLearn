@@ -1,6 +1,6 @@
 # LinkNLearn
 
-An all-in-one app for networking with college seniors and learning various courses is provided on the platform.
+      An all-in-one app for networking with college seniors and learning various courses is provided on the platform.
 
       Team Name: Noobesters
       Technology used: HTML,CSS, JavaScript, Python, Django.
@@ -12,7 +12,7 @@ An all-in-one app for networking with college seniors and learning various cours
             b) It has a feature of connecting with seniors and communicate.
             c) Students can buy courses and are able to access some of the free courses as well.
             d) Students can connect to the admins for any sort of queries.
-            e) As this website will work at college level so it will become very easy for the juniors to connect with the seniors and ask for referral and other                     placement related queries.
+            e) As this website will work at college level so it will become very easy for the juniors to connect with the seniors and ask for referral and other placement related queries.
             
       Future Updates:
             a) In-Built Resume Builder 
