@@ -1,0 +1,249 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block body %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <h1>Link and Learn</h1>
+        <h2>We, the team of LNL aims to provide all the resources from networking and learning all at one place...</h2>
+        {% if request.user.is_authenticated == False %}
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <a href="{% url 'userlogin:register' %}" class="btn-get-started scrollto">Get Started</a>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <img src="{% static 'app/img/hero-img.png' %}" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+  
+</section><!-- End Hero -->
+
+<main id="main">
+  
+  <!-- ======= Courses Section ======= -->
+  <section id="courses" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      
+      <div class="section-title">
+        <h2>Courses</h2>
+        <p>Learn at the comfort of your own home. <br> We at LNL understand how to get the most out of a course, so we are providing access to individuals to learn at their own pace.</p>
+      </div>
+
+      <div class="row">
+
+        {% for i in data %}
+        <div class="col-xl-3 mb-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box d-flex flex-column align-items-center">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="{% url 'app:each' i.course_name %}">{{i.course_name}}</a></h4>
+            <!-- <p>{{i.course_detail}}</p> -->
+          </div>
+        </div>
+        {% endfor %}
+        
+        <div class="premiumCourses">
+        <p class="text-center " style="font-size: 1.2rem">Explore some <strong>PREMIUM COURSES!</strong>
+        </p>
+        <div class="row">
+          <div class="premiumCourse col-xl-3 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box d-flex flex-column align-items-center">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="main-heading"><a href="">Nemo Enim</a></h4>
+              <h4 class="d-none fake-heading">Coming Soon</h4>
+              <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+            </div>
+          </div>
+          <div class="premiumCourse col-xl-3 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box d-flex flex-column align-items-center">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="main-heading"><a href="">Nemo Enim</a></h4>
+              <h4 class="d-none fake-heading">Coming Soon</h4>
+              <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+            </div>
+          </div>
+          
+          <div class="premiumCourse col-xl-3 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box d-flex flex-column align-items-center">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="main-heading"><a href="">Nemo Enim</a></h4>
+              <h4 class="d-none fake-heading">Coming Soon</h4>
+              <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+</section>
+    <!-- End Services Section -->
+    
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Think & Achieve</h3>
+            <p> If you think of something, you have to work on that thing to make it a truth of your life, otherwise you will be working for building some other person's dream.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section><!-- End Cta Section -->
+    
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>We, the team of LNL aims to provide all the resources from networking and learning all at one place which makes very easy for the beginners as well as intermediaries to learn from their seniors.</p>
+        </div>
+        
+        <div class="row">
+          
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'app/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tanmay Mathur</h4>
+                <span>Full Stack Developer</span>
+<!--                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
+                <div class="social">
+                  <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'app/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Priyanshu Verma</h4>
+                <span>Backend Developer</span>
+<!--                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
+                <div class="social">
+                  <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'app/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ayush Singh</h4>
+                <span>Front-end developer</span>
+<!--                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
+                <div class="social">
+                  <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'app/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Chirag Gupta</h4>
+                <span>Full Stack Developer</span>
+<!--                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>-->
+                <div class="social">
+                  <a href="" target="_blank"><i class="ri-twitter-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section><!-- End Team Section -->
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>We can solve your query in person. Feel free to contact us.</p>
+        </div>
+        
+        <div class="row" style="justify-content: space-evenly">
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="info d-flex row" ">
+              <div class="detailInfo col-6">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>SSCBS, Rohini, Delhi, India</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>ayushsinghkushwah8@gmail.com</p>
+                </div>
+                
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9509908688</p>
+                </div>
+              </div>
+              <div class="map col-6">
+                <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sscbs&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </section><!-- End Contact Section -->
+    
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LNL</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="team" class="team section-bg">
+      <div class="container seniors" data-aos="fade-up">
+        <div class="row">
+
+          {%for i in dic %}
+          <div class="col-lg-3 mt-4 single_col col-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in">
+              <div class="member-info">
+                <h4>{{i.name}}</h4>
+                <span class="position">{{i.position}}</span>
+                <p class="company">{{i.company_name}}</p>
+                <div class="social">
+                  <a href="mailto:{{i.email}}"><img class="img" src="{% static 'app/img/mail.png' %}" alt=""></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block body %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a target="_blank" href="{% url 'app:index' %}#courses">Courses</a></li>
+          <li>LNL</li>
+        </ol>
+        <h2>{{ each.course_name }}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+
+        <img src="{{ each.cover_image.url }}" alt="">
+        <h5 class="description">{{ each.course_detail }}</h5>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+{% endblock %}
