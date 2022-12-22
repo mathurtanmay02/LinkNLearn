@@ -2,7 +2,7 @@
 
       An all-in-one app for networking with college seniors and learning various courses is provided on the platform.
 
-      Team Name: Noobesters
+      Team Name: Bug Buddies
       Technology used: HTML,CSS, JavaScript, Python, Django.
       Requirements: pip install django
                     pip install pillow
