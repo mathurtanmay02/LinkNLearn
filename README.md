@@ -26,9 +26,9 @@
       
       Tanmay Mathur(FullStack Developer)
       
-      Chirag Gupta(FullStack Developer)
+      Mansi Sharma(Frontend Developer)
       
-      Ayush Singh(Frontend Developer)
+      Tarun Kumar(Frontend Developer)
       
 Screenshots:
 ![image](https://user-images.githubusercontent.com/75316656/200157894-f1703871-632c-483e-bbff-32b6ff620d59.png)
